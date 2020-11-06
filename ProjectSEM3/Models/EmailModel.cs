@@ -15,7 +15,7 @@ namespace ProjectSEM3.Models
 
         public EmailModel(string to, string sub, string bo)
         {
-            this.From = "cvrau113@gmail.com";
+            this.From = "hoanggiaphuc.engonow@gmail.com";
             this.To = to;
             this.Subject = sub;
             this.Body = bo;
@@ -42,7 +42,7 @@ namespace ProjectSEM3.Models
                 smtp.Port = 587;
                 smtp.UseDefaultCredentials = true;
                 smtp.Credentials = new System.Net.NetworkCredential
-                (model.From, "123213312");// Enter seders User name and password
+                (model.From, "Sdt38751204");// Enter seders User name and password
                 smtp.EnableSsl = true;
                 smtp.Send(mail);
                 return true;
